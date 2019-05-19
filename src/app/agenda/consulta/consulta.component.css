@@ -1,0 +1,17 @@
+.pesquisa{
+    margin-top: 20px;
+}
+
+.table{
+    margin-top: 20px;
+}
+
+.edit{
+    color: blue;
+    cursor: pointer;
+}
+
+.remove{
+    color: red;
+    cursor: pointer;
+}
