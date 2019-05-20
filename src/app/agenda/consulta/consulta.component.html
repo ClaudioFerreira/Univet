@@ -1,21 +1,32 @@
 <div class="form-inline pesquisa">
-
-  <div class="form-group mb-2">
+  <div class="form-group col-md-2">
     <label for="data" class="sr-only">Data</label>
     <input type="date" class="form-control-plaintext" id="data">
   </div>
 
-  <div class="form-group mb-2">
+  <div class="form-group col-md-8">
     <label for="nomeCliente" class="sr-only">Nome</label>
     <input type="nomeCliente" readonly class="form-control-plaintext" id="nomeCliente" placeholder="Nome do cliente">
   </div>
 
-  <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-search"></i> Pesquisar</button>
+  <button type="submit" class="btn btn-primary col-md-2"><i class="fas fa-search"></i> Pesquisar</button>
+</div>
 
-  <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#modalCadastro">
-    <i class="fas fa-calendar-plus"></i>
-    Nova Consulta
-  </button>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modalCadastroConsulta">
+        <i class="fas fa-calendar-plus"></i>
+        Nova Consulta
+      </button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#modalCadastroUsuario">
+        <i class="fas fa-user-plus"></i>
+        Novo Usuario
+      </button>
+    </div>
+  </div>
 </div>
 
 <table class="table table-hover">
@@ -66,7 +77,13 @@
 </table>
 
 <!-- Modal -->
-<div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro"
+<div class="modal fade" id="modalCadastroConsulta" tabindex="-1" role="dialog" aria-labelledby="modalCadastroConsulta"
   aria-hidden="true">
   <app-cadastro></app-cadastro>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCadastroUsuario" tabindex="-1" role="dialog" aria-labelledby="modalCadastroUsuario"
+  aria-hidden="true">
+  <app-clientes></app-clientes>
 </div>

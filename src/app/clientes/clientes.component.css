@@ -1,0 +1,23 @@
+.add{
+    color: green;
+    cursor: pointer;
+}
+
+.edit{
+    color: blue;
+    cursor: pointer;
+}
+
+.remove{
+    color: red;
+    cursor: pointer;
+}
+
+img{
+    height: auto;
+    width: 90px;
+}
+
+td{
+    vertical-align: middle;
+}

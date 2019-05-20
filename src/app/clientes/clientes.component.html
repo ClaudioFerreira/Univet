@@ -1,0 +1,106 @@
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Cadastro Usuario</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form>
+
+        <div class="form-group">
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-control" id="inputNome" placeholder="Nome do cliente">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="endereco1">Endereço</label>
+            <input type="text" class="form-control" id="endereco1" placeholder="Rua: Nome da rua">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="numero">Numero</label>
+            <input type="text" class="form-control" id="numero" placeholder="Numero">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="obs">Observações</label>
+            <textarea type="text" class="form-control" id="obs"
+              placeholder="Aqui vão as Observações como o numero do apartamento, dentre outras."></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAnimal">Nome Animal</label>
+            <input type="text" class="form-control" id="inputAnimal">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEspecie">Especie</label>
+            <select id="inputAnimal" class="form-control">
+              <option selected>Escolha a especie...</option>
+              <option>Gato</option>
+              <option>Cachorro</option>
+              <option>Reptil</option>
+              <option>Aves</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputFoto" aria-describedby="inputFoto">
+            <label class="custom-file-label" for="inputFoto">Escolha uma Foto</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="listaAnimais">Lista de Animais</label>
+          <table class="table table-hover" id="listaAnimais">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Especie</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Foto</th>
+                <th scope="col"></th>
+                <th scope="col">
+                  <i class="fas fa-plus add"></i>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Juju</td>
+                <td>Reptil</td>
+                <td>0.8</td>
+                <td>
+                  <img
+                    src="https://animais.culturamix.com/blog/wp-content/gallery/caracteristicas-dos-repteis-4/Caracteristicas-Dos-Repteis-11.jpg"
+                    alt="" class="fotoAnimal">
+                </td>
+                <td><i class="fas fa-pen edit fa-lg"></i></td>
+                <td><i class="fas fa-minus remove fa-lg"></i></td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+      </form>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        <i class="fas fa-calendar-times"></i>
+        Fechar
+      </button>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-calendar-check"></i>
+        Salvar
+      </button>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { ConsultaComponent } from './agenda/consulta/consulta.component';
 import { CadastroComponent } from './agenda/cadastro/cadastro.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ClientesComponent } from './clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
     AgendaComponent,
     ConsultaComponent,
     CadastroComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
