@@ -34,7 +34,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputAnimal">Nome Animal</label>
-            <input type="text" class="form-control" id="inputAnimal">
+            <input type="text" class="form-control" id="inputAnimal" placeholder="Informe o nome do animal">
           </div>
           <div class="form-group col-md-6">
             <label for="inputEspecie">Especie</label>
@@ -48,11 +48,16 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputFoto" aria-describedby="inputFoto">
+        <div class="form-row">
+
+          <div class="form-group col-md-4">
+            <input type="number" class="form-control" id="inputAnimaPeso" placeholder="Informe o peso do animal">
+          </div>
+          <div class="custom-file col-md-8">
+            <input type="file" class="custom-file-input form-control" id="inputFoto" aria-describedby="inputFoto" placeholder="Escolha uma Foto">
             <label class="custom-file-label" for="inputFoto">Escolha uma Foto</label>
           </div>
+
         </div>
 
         <div class="form-group">

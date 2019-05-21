@@ -1,3 +1,8 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .menu{
     color: white;
     background-color: #333;
@@ -8,32 +13,41 @@
     padding: 0;
 }
 
-/* .menu img{
-    background-color: white;
-    width: 100%;
-    object-fit: contain;
-} */
-
-.menu h4{
-    margin-top: 20px;
-}
-
 .menu ul{
     text-decoration: none;
     cursor: pointer;
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 20px;
 }
 
 .menu ul li{
     margin: 20px;
     border-bottom: white solid 1px;
+    text-align: center;
 }
 
-.menu li:hover{
+.menu ul li:hover{
     border-top: 20px;
     color: cornflowerblue;
-    border-bottom: cornflowerblue solid 2px;
+    border-bottom: cornflowerblue solid 1px;
+}
+
+#agenda:hover{
+    border-top: 20px;
+    color: steelblue;
+    border-bottom: steelblue solid 1px;
+}
+
+#consulta:hover{
+    border-top: 20px;
+    color: orangered;
+    border-bottom: orangered solid 1px;
+}
+
+#usuario:hover{
+    border-top: 20px;
+    color: orchid;
+    border-bottom: orchid solid 1px;
 }
 
 .user{
@@ -49,9 +63,10 @@
 
 .userDados{
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .user span:hover{
-    color: brown;
+    color: red;
     font-weight: bold;
 }
