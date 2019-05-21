@@ -9,6 +9,8 @@ import { ConsultaComponent } from './agenda/consulta/consulta.component';
 import { CadastroComponent } from './agenda/cadastro/cadastro.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ClientesComponent } from './clientes/clientes.component';
+import { ConstultaUsuariosComponent } from './usuarios/constulta-usuarios/constulta-usuarios.component';
+import { CadastroUsuariosComponent } from './usuarios/cadastro-usuarios/cadastro-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ClientesComponent } from './clientes/clientes.component';
     ConsultaComponent,
     CadastroComponent,
     UsuariosComponent,
-    ClientesComponent
+    ClientesComponent,
+    ConstultaUsuariosComponent,
+    CadastroUsuariosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,56 @@
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Cadastro Usuarios</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <form>
+        <div class="form-group">
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-control" id="inputNome" placeholder="Nome do Usuario">
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email do Usuario">
+        </div>
+
+        <div class="custom-file">
+          <input type="file" class="custom-file-input form-control" id="inputFoto" aria-describedby="inputFoto"
+            placeholder="Escolha uma Foto">
+          <label class="custom-file-label" for="inputFoto">Escolha uma Foto</label>
+        </div>
+
+        <div class="form-group">
+          <label for="inputSenha">Senha</label>
+          <input type="password" class="form-control" id="inputSenha" placeholder="Senha temporaria para o usuario">
+        </div>
+
+        <div class="form-group">
+          <label for="inputAnimal">Setor</label>
+          <select id="inputAnimal" class="form-control">
+            <option selected>Escolha o setor do usuario...</option>
+            <option>Recepção</option>
+            <option>Medico veterinario</option>
+            <option>Adiministração</option>
+          </select>
+        </div>
+      </form>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        <i class="fas fa-user-times"></i>
+        Fechar
+      </button>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-user-check"></i>
+        Salvar
+      </button>
+    </div>
+  </div>
+</div>
