@@ -1,3 +1,136 @@
-<p>
-  consulta-cadastro works!
-</p>
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Notas da Consulta</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <!-- <form>
+          <div class="form-group">
+            <label for="inputNome">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome do cliente">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputData">Data</label>
+              <input type="date" class="form-control" id="inputData">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputHora">Hora</label>
+              <input type="time" class="form-control" id="inputHora">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAnimal">Animal</label>
+            <select id="inputAnimal" class="form-control">
+              <option selected>Escolha o Animal...</option>
+              <option>Top</option>
+              <option>Bella</option>
+            </select>
+          </div>
+        </form> -->
+
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-animal-tab" data-toggle="tab" href="#nav-animal" role="tab"
+            aria-controls="nav-animal" aria-selected="true">Animal</a>
+          <a class="nav-item nav-link" id="nav-dono-tab" data-toggle="tab" href="#nav-dono" role="tab"
+            aria-controls="nav-dono" aria-selected="false">Dono</a>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-animal" role="tabpanel" aria-labelledby="nav-animal-tab">
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputAnimal">Nome do Animal</label>
+                <input type="text" class="form-control" id="inputAnimal" placeholder="Nome do Animal">
+              </div>
+
+              <div class="form-group col-md-3">
+                <label for="inputEspecieAnimal">Especie</label>
+                <select type="text" class="form-control" id="inputEspecieAnimal">
+                  <option selected>Gato</option>
+                  <option>Cachorro</option>
+                  <option>Reptil</option>
+                  <option>Aves</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <img src="https://gratisography.com/thumbnails/gratisography-326-thumbnail.jpg" alt="" id="foto">
+              </div>
+            </div>
+          </form>
+
+          <label for="historico">Historico de consultas</label>
+          <div class="container historico">
+            <table class="table table-hover" id="historico">
+              <thead>
+                <tr>
+                  <th scope="col">Data</th>
+                  <th scope="col">Medico Veterinario</th>
+                  <th scope="col">Observações</th>
+                  <th scope="col">Receitado</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
+                  <td>Data</td>
+                  <td>Medico Veterinario</td>
+                  <td>Observações</td>
+                  <td><i class="fas fa-file-alt view fa-lg"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="nav-dono" role="tabpanel" aria-labelledby="nav-dono-tab">
+
+          <form>
+            <div class="form-group">
+              <label for="inputNome">Nome</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome do cliente">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <label for="endereco1">Endereço</label>
+                <input type="text" class="form-control" id="endereco1" placeholder="Rua: Nome da rua">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="numero">Numero</label>
+                <input type="text" class="form-control" id="numero" placeholder="Numero">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="obs">Observações</label>
+                <textarea type="text" class="form-control" id="obs"
+                  placeholder="Aqui vão as Observações como o numero do apartamento, dentre outras."></textarea>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        <i class="fas fa-times fa-lg"></i>
+        Fechar
+      </button>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-check fa-lg"></i>
+        Salvar
+      </button>
+    </div>
+  </div>
+</div>

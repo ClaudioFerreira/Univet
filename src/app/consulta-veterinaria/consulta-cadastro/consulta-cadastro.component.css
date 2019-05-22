@@ -1,0 +1,30 @@
+.modal-header{
+    color: white;
+    background-color: #333;
+}
+
+span{
+    color: white;
+}
+
+img{
+    height: auto;
+    width: 180px;
+    border-radius: 8px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.table{
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.view{
+    color: blue;
+    cursor: pointer;
+}

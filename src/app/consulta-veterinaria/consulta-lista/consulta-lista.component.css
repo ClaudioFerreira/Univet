@@ -7,14 +7,10 @@
     margin-top: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
+    text-align: center;
 }
 
-.edit{
+.view{
     color: blue;
-    cursor: pointer;
-}
-
-.remove{
-    color: red;
     cursor: pointer;
 }
