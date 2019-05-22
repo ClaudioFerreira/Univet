@@ -1,65 +1,64 @@
-<div class="container">
-  <div class="form-inline pesquisa">
-    <div class="form-group col-md-2">
-      <label for="data" class="sr-only">Data</label>
-      <input type="date" class="form-control-plaintext" id="data">
-    </div>
-
-    <div class="form-group col-md-2">
-      <label for="hora" class="sr-only">Hora</label>
-      <input type="time" class="form-control-plaintext" id="hora">
-    </div>
-
-    <div class="form-group col-md-6">
-      <label for="nomeCliente" class="sr-only">Nome</label>
-      <input type="nomeCliente" readonly class="form-control-plaintext" id="nomeCliente" placeholder="Nome do cliente">
-    </div>
-
-    <button type="submit" class="btn btn-info col-md-2" data-toggle="tooltip" data-placement="top"
-      title="Tooltip on top"><i class="fas fa-search"></i> Pesquisar</button>
+<div class="form-inline pesquisa">
+  <div class="form-group col-md-2">
+    <label for="data" class="sr-only">Data</label>
+    <input type="date" class="form-control-plaintext" id="data">
   </div>
 
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">Data</th>
-        <th scope="col">Hora</th>
-        <th scope="col">Nome Dono</th>
-        <th scope="col">Nome Animal</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
-        <td>Data</td>
-        <td>Hora</td>
-        <td>Dono</td>
-        <td>Animal</td>
-        <td><i class="fas fa-file-alt view fa-lg"></i></td>
-      </tr>
-
-      <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
-        <td>Data</td>
-        <td>Hora</td>
-        <td>Dono</td>
-        <td>Animal</td>
-        <td><i class="fas fa-file-alt view fa-lg"></i></td>
-      </tr>
-
-      <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
-        <td>Data</td>
-        <td>Hora</td>
-        <td>Dono</td>
-        <td>Animal</td>
-        <td><i class="fas fa-file-alt view fa-lg"></i></td>
-      </tr>
-
-    </tbody>
-  </table>
-
-  <!-- Modal -->
-  <div class="modal fade" id="modalDetalhesConsulta" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesConsulta"
-    aria-hidden="true">
-    <app-consulta-cadastro></app-consulta-cadastro>
+  <div class="form-group col-md-2">
+    <label for="hora" class="sr-only">Hora</label>
+    <input type="time" class="form-control-plaintext" id="hora">
   </div>
+
+  <div class="form-group col-md-6">
+    <label for="nomeCliente" class="sr-only">Nome</label>
+    <input type="nomeCliente" readonly class="form-control-plaintext" id="nomeCliente" placeholder="Nome do cliente">
+  </div>
+
+  <button type="submit" class="btn btn-info col-md-2" data-toggle="tooltip" data-placement="top"
+    title="Tooltip on top"><i class="fas fa-search"></i> Pesquisar</button>
+</div>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Data</th>
+      <th scope="col">Hora</th>
+      <th scope="col">Nome Dono</th>
+      <th scope="col">Nome Animal</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
+      <td>Data</td>
+      <td>Hora</td>
+      <td>Dono</td>
+      <td>Animal</td>
+      <td><i class="fas fa-file-alt view fa-lg"></i></td>
+    </tr>
+
+    <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
+      <td>Data</td>
+      <td>Hora</td>
+      <td>Dono</td>
+      <td>Animal</td>
+      <td><i class="fas fa-file-alt view fa-lg"></i></td>
+    </tr>
+
+    <tr data-toggle="modal" data-target="#modalDetalhesConsulta">
+      <td>Data</td>
+      <td>Hora</td>
+      <td>Dono</td>
+      <td>Animal</td>
+      <td><i class="fas fa-file-alt view fa-lg"></i></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="modalDetalhesConsulta" tabindex="-1" role="dialog" aria-labelledby="modalDetalhesConsulta"
+  aria-hidden="true">
+  <app-consulta-cadastro></app-consulta-cadastro>
+</div>
