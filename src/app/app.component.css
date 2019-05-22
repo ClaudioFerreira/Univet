@@ -52,6 +52,11 @@ body{
 
 .user{
     color: white;
+    font-size: 20px;
+}
+
+.user h6{
+    font-size: 20px;
 }
 
 .user img{
