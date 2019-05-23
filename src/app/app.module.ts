@@ -8,7 +8,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { ConsultaComponent } from './agenda/consulta/consulta.component';
 import { CadastroComponent } from './agenda/cadastro/cadastro.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { ClientesComponent } from './clientes/clientes.component';
+import { ClientesComponent } from './agenda/clientes/clientes.component';
 import { ConstultaUsuariosComponent } from './usuarios/constulta-usuarios/constulta-usuarios.component';
 import { CadastroUsuariosComponent } from './usuarios/cadastro-usuarios/cadastro-usuarios.component';
 import { ConsultaVeterinariaComponent } from './consulta-veterinaria/consulta-veterinaria.component';
